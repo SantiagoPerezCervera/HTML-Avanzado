@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML avanzado</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+<div class="container">
+<form action="test.html" method="get">
+    <label for="mail" name>Correo electronico</label>
+    <input type="text" id="mail" name="mail">
+    <label for="password">contraseña</label>
+    <input type="password" id="password" name="password">
+    <input type="submit" value="Submit">
+    <input type="number">
+</form>
+</div>
+<div class="container">
+    <form action="test.html" method="post">
+        <label for="mail" name>Correo electronico</label>
+        <input type="text" id="mail" name="mail" required>
+        <label for="password">contraseña</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<div class="container">
+    <form action="/test.html" method="get">
+            Comida favorita
+            <input type="radio" id="radio1" name="fav_comida" value="pizza">
+            <label for="radio1">Pizza</label>
+            <input type="radio" id="radio2" name="fav_comida" value="sushi">
+            <label for="radio2">Sushi</label>
+            <input type="radio" id="radio3" name="fav_comida" value="hamburguesa">
+            <label for="radio3">Hamburguesa</label>
+            <input type="submit" value="Submit">
+    </form>
+</div>
+<div class="container">
+    <form action="/test.html" method="get">
+            <input type="checkbox" id="ingrediente1" name="pollo" value="pollo">
+            <label for="ingrediente1">Pollo</label>
+            <input type="checkbox" id="ingrediente2" name="carne">
+            <label for="ingrediente2">Carne</label>
+            <input type="checkbox" id="ingrediente3" name="champiñones">
+            <label for="ingrediente3">Champiñones</label>
+            
+            <input type="submit" value="Submit">
+    </form>
+</div>
+
+<div class="container">
+     <form action="/test.html" method="get" id="formulario1">
+            <select name="pan" id="pan">
+            <option disabled selected value="">Seleccionar</option>
+            <option value="integral">Integral</option>
+            <option value="ajo">Ajo</option>
+            <option value="keto">Keto</option>
+            <option value="dulce">Dulce</option>
+            <option value="blanco">Blanco</option>
+            <option value="masamadre">Masa madre</option>
+            <option value="horno">Horno</option>
+            
+        </select>
+
+        <input type="date" id="start" name="start" min="2002-03-02" max="2022-05-27">
+        <input type="datetime-local" name="start-date-hour" id="start-date-hour">
+
+        <input type="submit" value="Submit">
+
+    </form>
+</div>
+ <button>boton real</button>  
+ <button form="formulario1">boton formulario</button>  
+ <button onclick="myFunction()">Boton con js</button>
+
+
+
+
+<div class="container">
+    <table>
+        <tr>
+            <th>Correo</th>
+            <th>Nombre</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+        <td>fullsantiago@gmail.com</td>
+        <td>Santiago Perez</td>
+        <td>Aprobado</td>
+    </tr>
+    <tr>
+        <td>fgraciela25@gmail.com</td>
+        <td>Graciela Lopez</td>
+        <td>Aprobado</td>
+    </tr>
+    <tr>
+        <td>Sacerex@hotmail.com</td>
+        <td>Edwin Cetina</td>
+        <td>Reprobado</td>
+    </tr>
+    <tr>
+        <td>Emilio2893@gmail.com</td>
+        <td>Emilio Perez</td>
+        <td>Aprobado</td>
+    </tr>
+    </table>  
+</div>   
+<!-- Atributos que permiten combinar estilos de columnas -->
+<div class="container">
+    <table>
+        <colgroup>
+        <col span="2" style="background-color: none;">
+        <col span="1" style="background-color: blue;"> 
+        </colgroup>
+        <tr>
+            <th>Correo</th>
+            <th>Nombre</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>fullsantiago@gmail.com</td>
+            <td>Santiago Perez</td>
+            <td>Aprobado</td>
+        </tr>
+    </table>
+</div>
+        <!-- Atributos que permiten combinar columnas -->
+        <div class="container">
+            <table>
+                <thead>
+                    <th>Correo</th>
+                    <th colspan="2">Nombre y Status</th>
+                    <tbody>
+                        <tr>
+                            <td>Fullsantiago@gmail.com</td>
+                            <td>Santiago Perez</td>
+                            <td>Aprobado</td>
+
+                        </tr>
+                    </tbody>
+                </thead>
+            </table>
+        </div>
+        <div class="container">
+            <a href="https://www.google.com">Google</a>
+            <!-- Blank abre una pestaña nueva y direcciona a la URL -->
+            <a href="https://www.google.com" target="_blank">Google_blank</a>
+            <!-- Self direcciona a la url dentro de la misma ventana activa -->
+            <a href="https://www.google.com" target="_self">Google_self</a>
+            <!-- Top y parent se utilizan principalmente cuando se le agrega la funcion de iframe -->
+            <a href="https://www.google.com" target="_top">Google_top</a>
+            <a href="https://www.google.com" target="_parent">Google_parent</a>
+        </div>
+<div class="container">
+    <!-- Como agregar subject y cuerpo del mensaje
+ -->
+    <a href="mailto:fullsantiago@gmail.com">correo</a>
+</div>    
+  
+<script>
+    function myFunction() {
+        alert("hola");
+    }
+</script>
+
+</body>
+</html>
